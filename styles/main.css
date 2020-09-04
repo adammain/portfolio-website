@@ -1,0 +1,335 @@
+/*
+ *
+ * Base
+ *
+ */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;  /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  color: #222;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+/* Set ALL HTML elements with border-box sizing */
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* NOTE
+screen overflow safety-net */
+img, embed,
+object, video {
+  max-width: 100%;
+}
+
+/* General Use Flex and Alignments
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.grid {
+  display: flex;
+}
+
+.fw-wrap {
+  flex-wrap: wrap !important;
+}
+
+.ai-center {
+  align-items: center !important;
+}
+
+.jc-center {
+  justify-content: center !important;
+}
+
+.mr4 {
+  margin-right: 4px !important;
+}
+
+.mr18 {
+  margin-right: 18px !important;
+}
+
+.m8 {
+  margin: 8px;
+}
+
+.bold {
+  font: bold;
+}
+
+.svg-icon {
+  vertical-align: bottom;
+}
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a:link {
+  color: #1EAEDB;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #06a9d6;
+}
+
+a:hover {
+  color: #0FA0CE;
+}
+
+a:active {
+  color: #0e90b8;
+}
+
+.icon-link__container {
+  padding: 48px 0;  /*tap target sizing*/
+}
+
+.icon-link_icon {
+  vertical-align: middle;
+  width: 1.8rem;
+}
+
+.icon-link {
+  color: #02b3e4;
+  vertical-align: middle;
+  text-transform: uppercase;
+  padding: .5rem;
+  font-size: 1.3rem;
+  font-weight: inherit;
+}
+
+
+/* NOTE
+tap targets minimum size for big fingers */
+nav, a, button {
+  min-width: 48px;
+  min-height: 48px;
+}
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*
+ *
+ * Header
+ *
+ */
+
+.header__inner {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: .5rem;
+  background: url(../images/paintsplatter-bg.png) no-repeat 0 0, 0 100%;
+}
+
+.header__profile_pic {
+  max-width: 14rem;
+  max-height: 14rem;
+  border-radius: 50%;
+  border: double lightsteelblue;
+  margin-top: 1rem;
+}
+
+.header__profile_description {
+  color: #2d3c49;
+  width: 100%;
+  margin-top: 2.2rem;
+}
+
+.main-hidden {
+  visibility: hidden;
+  height: 0;
+  transition: margin-top .5s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.profile__name {
+  font-weight: 300;
+}
+
+.profile__title {
+  font-weight: 600;
+}
+
+ /*
+ *
+ * Top Level Navigation
+ *
+ */
+
+
+
+ /*
+ *
+ * Main
+ *
+ */
+main {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+main div p {
+  padding: 1em 2em;
+}
+
+
+ /*
+ *
+ * Content
+ *
+ */
+
+
+
+ /*
+ *
+ * Project Cards
+ *
+ */
+
+.card {
+  margin-top: 4rem;
+  border-radius: 0.42857rem;
+  box-shadow: 0 0 10px 2px rgba(0,0,0,0.18);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 3rem;
+ }
+
+ .card:hover {
+  box-shadow: 0px 1px 8px 0px rgba(46, 61, 73, 0.2)
+ }
+
+.card__large {
+  border-radius: 0.42857rem;
+  box-shadow: 6px 5px 20px 0px rgba(46, 61, 73, 0.15);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 3rem;
+ }
+
+ .card__large:hover {
+  box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.2);
+ }
+
+  /*
+ *
+ * Portfolio
+ *
+ */
+
+.portfolio__container {
+  margin-top: 1.5rem;
+}
+
+.portfolio__header {
+  font-weight: 400;
+  text-align: center;
+  margin: 1.5rem;
+}
+
+.project__title {
+  margin: 3rem 0 .4rem 0;
+}
+
+.project__content {
+  text-align: center;
+}
+
+.project__featured_image__container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.project__featured_image {
+  justify-content: center;
+  height: 75%;
+  width: 75%;
+  border-radius: 5px 5px 3px 3px;
+  box-shadow: 3px 10px 20px 3px rgba(46, 61, 73, 0.15);
+}
+
+.project__fresh_tomatoes {
+  border-top: 0.2rem solid #efefef;
+  margin-top: 0;
+}
+
+.project__order_menu {
+  border-top: 0.5rem solid #02b3ef;
+}
+
+.project__movuni {
+  border-top: 0.5rem solid #8dcf3f;
+}
+
+ /*
+ *
+ * Footer
+ *
+ */
+
+footer {
+  border-top: 1px solid #E0E0E0;
+  padding: 1rem;
+  width: 100%;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+  padding: 1.5rem;
+}
+
+.footer__author {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.footer__author h4 {
+  color: dimgray;
+}

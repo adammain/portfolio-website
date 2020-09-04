@@ -1,0 +1,91 @@
+.header__inner {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.header__logo {
+  width: 8rem;
+  height: 8rem;
+}
+
+.header__top_row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.header__middle_row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__profile_description {
+  width: initial;
+  margin: 0;
+  text-align: right;
+}
+
+.profile__name {
+  line-height: 1.3;
+  font-size: -webkit-xxx-large;
+}
+
+.medium-hidden {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.main-hidden {
+  visibility: visible;
+  height: inherit;
+  transition: visibility .5s ease;
+}
+
+.card {
+  max-width: 100%;
+  transition: all 0.5s ease;
+}
+
+.card__large {
+  border-radius: 0.42857rem;
+  box-shadow: 6px 5px 20px 0px rgba(46, 61, 73, 0.15);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 2rem;
+}
+
+.portfolio__container {
+  /* max-width: 80%; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 3rem;
+  margin: 0 auto;
+}
+
+.portfolio__header {
+  text-align: left;
+  width: 100%;
+}
+
+.project__featured_image {
+  width: 100%;
+  height: 100%;
+}
+
+.project__fresh_tomatoes {
+  margin: 0;
+  border-top-color: #02b3e4;
+}
+
+.project__order_menu {
+  border-top-color: #7d97ad;
+}
+
+.project__movuni {
+  border-top-color: #8dcf3f;
+}
