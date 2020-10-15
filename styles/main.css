@@ -85,8 +85,7 @@ nav, a, button {
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container:after,
-.row:after,
-.u-cf {
+.row:after {
   content: "";
   display: table;
   clear: both; }
