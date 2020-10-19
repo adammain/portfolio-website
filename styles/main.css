@@ -8,6 +8,19 @@
   flex-wrap: wrap !important;
 }
 
+.flx-col {
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
 .ai-center {
   align-items: center !important;
 }
@@ -24,8 +37,16 @@
   margin-right: 18px !important;
 }
 
+.mb10 {
+  margin-bottom: 10px
+}
+
 .m8 {
   margin: 8px;
+}
+
+.mw50p {
+  max-width: 50%
 }
 
 .bold {
@@ -233,6 +254,31 @@ main div p {
 
 .project__movuni {
   border-top: 0.5rem solid #8dcf3f;
+}
+
+/*
+*
+* Contact Form Design
+*
+*/
+
+form {
+  padding-right: 8px;
+  /* Fixed small sizing issue on the right */
+}
+
+form label {
+  display: block;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
 }
 
 /*
