@@ -281,6 +281,14 @@ form textarea {
   height: 160px;
 }
 
+.contact_form {
+  width: 50%;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 72px 55px 65px 55px;
+  background: linear-gradient(45deg, #5941e2, #362bd1);
+}
+
 /*
 *
 * Footer
@@ -288,7 +296,6 @@ form textarea {
 */
 
 footer {
-  border-top: 1px solid #E0E0E0;
   padding: 1rem;
   width: 100%;
 }
