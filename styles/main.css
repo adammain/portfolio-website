@@ -229,6 +229,11 @@ main div p {
   text-align: center;
 }
 
+/* 'HACK' to reduce padding around project descriptions */
+main div p {
+  padding: 0;
+}
+
 .project__featured_image__container {
   display: flex;
   justify-content: center;
